@@ -6,15 +6,9 @@ pipeline {
 
   }
   stages {
-    stage('') {
+    stage('transfere') {
       steps {
-        node(label: 'data') {
-          ws(dir: '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') {
-            sh 'ls -l'
-          }
-
-        }
-
+        node(label: 'data')
       }
     }
 
